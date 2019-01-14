@@ -83,6 +83,10 @@ spring.social.weibo:
   app-id:
   app-secret:
 
+# 取消添加 x-application-context 头信息
+management:
+  add-application-context-header: false
+
 
 
 
