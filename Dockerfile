@@ -13,4 +13,6 @@ FROM openjdk:8-jdk-alpine
 
 COPY --from=build /usr/src/app/lolibox-server/target/lolibox-server-0.2.7-RELEASE.jar .
 
+EXPOSE 8888
+
 CMD ["java", "-jar", "lolibox-server-0.2.7-RELEASE.jar"]
